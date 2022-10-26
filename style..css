@@ -5,34 +5,24 @@
 }
 
 body {
-  background: linear-gradient(90deg, red, blue);
+  background: linear-gradient(25deg, red, blue);
 }
 
-.progeress-bar {
-  margin: 40vh auto;
-  width: 30vh;
-  height: 2vh;
-  border-radius: 31px;
-  border: 1px solid black;
-  position: relative;
-  overflow: hidden;
+div {
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.progeress-bar .progress {
-  position: absolute;
-  width: 0;
-  height: 2vh;
-  border-radius: 20px;
-  transition: 1s;
-  background: linear-gradient(90deg, rgba(30, 0, 0, 0.2), rgb(255, 0, 0));
-  animation: progres 1s infinite ease-out;
+button {
+  width: 20vh;
+  height: 5vh;
+  border-radius: 10px;
+  border: 1px solid transparent;
 }
-
-@keyframes progres {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+p {
+  color: white;
 }
