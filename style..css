@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, red, blue);
+}
+
+.progeress-bar {
+  margin: 40vh auto;
+  width: 30vh;
+  height: 2vh;
+  border-radius: 31px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.progeress-bar .progress {
+  position: absolute;
+  width: 0;
+  height: 2vh;
+  border-radius: 20px;
+  transition: 1s;
+  background: linear-gradient(90deg, rgba(30, 0, 0, 0.2), rgb(255, 0, 0));
+  animation: progres 1s infinite ease-out;
+}
+
+@keyframes progres {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
